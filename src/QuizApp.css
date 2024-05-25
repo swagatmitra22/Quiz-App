@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap");
+
+html {
+    font-size: 1.5rem;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .quiz-title {
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .question-section {
+    font-weight: 600;
+    width: 70vw;
+    padding: 0rem 1rem;
+  }
+  
+  .question-count {
+    display: flex;
+    justify-content: space-between; /* Align items to the sides */
+    padding: 1rem 1rem;
+    color: #0056b3;
+  }
+  
+  .question-text {
+    font-size: larger;
+    padding: 1rem 1rem;
+    background-color: rgb(255, 238, 160);
+    border-radius: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    border: 2px solid #000000;
+  }
+  
+  .timer {
+    color: #b34e00;
+  }
+  
+  .answer-section {
+    display: flex;
+    flex-direction: column;
+    width: 70vw; /* Adjust the width as needed */
+    padding: 0rem 1rem;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw; /* Adjust the width as needed */
+    margin: 1rem 0rem;
+    box-sizing: border-box;
+  }
+
+  .navigation-buttons button {
+    background-color: rgb(158, 255, 162);
+    border-radius: 5rem;
+    color: #024700;
+    font-weight: 600;
+    border: 2px solid #000000;
+  }
+
+  .navigation-buttons button:hover {
+    background-color: rgb(0, 120, 4);
+    color: white;
+  }
+
+  .options {
+    padding: 0.5rem 0rem;
+  }
+
+  input[type="radio"] {
+    display: none;
+    transform: scale(2.5); /* Adjust the scale factor as needed */
+    margin-right: 0.7rem; /* Optional: Add some space between the radio button and label */
+  }
+
+  input[type="radio"] + label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    color: #333;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 2rem;
+    font-weight: 600;
+  }
+
+  .score {
+    width: 70vw;
+    display: block;
+    font-weight: 600;
+    font-size: larger;
+    padding: 1rem 0rem;
+    color: #0060c7;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: rgb(152, 245, 255);
+    border: 2px solid #000000;
+    margin-bottom: 2rem;
+  }
